@@ -42,7 +42,7 @@ const urlParam = '';
 //const urlParam = '?phone=13920171111&tenantId=ot85sl3q';
 
 // 基础档案 模型查询接口
-export const FICLOUDPUB_INITGRID_URL = makeURL('/initheader/initgrid'+urlParam);
+export const FICLOUDPUB_INITGRID_URL = makeURL('/basedoc_pub/initgrid'+urlParam);
 // 基础档案 数据查询接口
 export const getAddURL = type => `${SCHEME}://${HOST_PORT}${PATH_PREFIX}/${type}/add`+urlParam;
 export const getSaveURL = type => `${SCHEME}://${HOST_PORT}${PATH_PREFIX}/${type}/save`+urlParam;
@@ -52,7 +52,7 @@ export const getEnableURL = type => `${SCHEME}://${HOST_PORT}${PATH_PREFIX}/${ty
 export const getUpdateURL = type => `${SCHEME}://${HOST_PORT}${PATH_PREFIX}/${type}/update`+urlParam;
 
 // 参照 查询接口
-export const ReferDataURL = makeURL('/refbase_ctr/queryRefJSON');
+export const ReferDataURL = makeURL('/ref_base/query');
 export const ReferUserDataURL = makeURL('/userCenter/queryUserAndDeptByDeptPk');
 
 // 职务职级城市查询接口

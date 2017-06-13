@@ -618,7 +618,7 @@ export const validation = {
   tableRowData: (json) => {
     let isValid = true;
     let message = '';
-    let pks = json.data.map(row => row.pk);
+    let pks = json.data.map(row => row.id);
     // 为什么没有import lodash还能使用_？
     let duplicatedIds = _.filter(pks, (value, index, iteratee) => {
       return _.includes(iteratee, value, index + 1);
